@@ -154,7 +154,6 @@ void modifyrecord()
 void main()
 {
 	int choice;
-	clrscr();
 
 	// opening the file
 	fp = fopen("data.txt", "rb+");
