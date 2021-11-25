@@ -21,13 +21,16 @@ Human resources managers (HRM) have a wide range of responsibilities inside a bu
  ## WHERE
  EMS aids in the elimination of the manual procedure, saving both time and money. This system safeguards the professional and personal information of employees and the firm. HR and business managers are relieved of their burdens and pressures thanks to the personnel management system.
  ## HOW
-* For storing the data of the employee, create a user define datatype which will store the information regarding Employee.                                                        * For building the employee table the idea is to use the array of the above struct datatype which will use to store the information regarding employee.                          * Since we are using array to store the data, therefore to delete the data at any index shift all the data at that index by 1 and delete the last data of the array by decreasing the size of array by 1.                                                                                                                                                          *  For searching in the record based on any parameter, the idea is to traverse the data and if at any index the value parameters matches with the record stored, print all the information of that employee.
-# Detail requirements
+* For storing the data of the employee, create a user define datatype which will store the information regarding Employee.
+* For building the employee table the idea is to use the array of the above struct datatype which will use to store the information regarding employee
+* Since we are using array to store the data, therefore to delete the data at any index shift all the data at that index by 1 and delete the last data of the array by decreasing the size of array by 1.
+* For searching in the record based on any parameter, the idea is to traverse the data and if at any index the value parameters matches with the record stored, print all the information of that employee.
+## Detail requirements
 ## High Level Requirements
 PC with Pentium IV processor.
 512 MB RAM or above.
 40 GB Hard Disk or above.
-##  Low level Requirements
+## Low level Requirements
 Operating system : Windows XP (or latest).
 Front end : C Runtime
 Platform : C sting
