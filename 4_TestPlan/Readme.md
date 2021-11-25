@@ -7,7 +7,6 @@
 |  H_01       |Adding new employee data to record    |Employee data|SUCESS       |SUCESS          |PASS              |
 |  H_02       |Deleting new employee data form record|Name         |SUCESS       |SUCESS          |PASS              |
 |  H_03       |Modify new employee data from record  |Name/new data|NEW DATA     |NEW DATA        |PASS              |
-|  
 
 ## Table no: Low level test plan
 
