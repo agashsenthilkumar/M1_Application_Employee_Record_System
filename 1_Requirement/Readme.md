@@ -1,5 +1,6 @@
 # Requirement
-## Introduction                                                                                                                                                                  Employee Record System is software designed to manage a company's primary housekeeping responsibilities. ERS assists businesses in keeping track of all personnel and their data. It's utilised to run the business with the help of a computerised system. This software was created to manage the records of any company's employees. It will assist businesses in keeping track of all of their employees' records in a single file. Employee Record System is software designed to manage a company's primary housekeeping responsibilities. ERS assists businesses in keeping track of all personnel and their data. It's utilised to run the business with the help of a computerised system. This software was created to manage the records of any company's employees.It will assist businesses in keeping track of all of their employees' records in a single file.You can list the employees' records here, but you can't search them like you can in other C projects. Try changing this project and implementing the search feature with your own code. This project is finished and free of errors.                                                                                                                                                                            Aim of the Employee’s Record System: The user will be provided with 5 options Add a
+## Introduction
+Employee Record System is software designed to manage a company's primary housekeeping responsibilities. ERS assists businesses in keeping track of all personnel and their data. It's utilised to run the business with the help of a computerised system. This software was created to manage the records of any company's employees. It will assist businesses in keeping track of all of their employees' records in a single file. Employee Record System is software designed to manage a company's primary housekeeping responsibilities. ERS assists businesses in keeping track of all personnel and their data. It's utilised to run the business with the help of a computerised system. This software was created to manage the records of any company's employees.It will assist businesses in keeping track of all of their employees' records in a single file.You can list the employees' records here, but you can't search them like you can in other C projects. Try changing this project and implementing the search feature with your own code. This project is finished and free of errors.                                                                                                                                                                            Aim of the Employee’s Record System: The user will be provided with 5 options Add a
 new record.
 Delete a record.
 Modify a record.
@@ -22,11 +23,11 @@ Human resources managers (HRM) have a wide range of responsibilities inside a bu
  ## HOW
 * For storing the data of the employee, create a user define datatype which will store the information regarding Employee.                                                        * For building the employee table the idea is to use the array of the above struct datatype which will use to store the information regarding employee.                          * Since we are using array to store the data, therefore to delete the data at any index shift all the data at that index by 1 and delete the last data of the array by decreasing the size of array by 1.                                                                                                                                                          *  For searching in the record based on any parameter, the idea is to traverse the data and if at any index the value parameters matches with the record stored, print all the information of that employee.
 # Detail requirements
-## High Level Requirements:
+## High Level Requirements
 PC with Pentium IV processor.
 512 MB RAM or above.
 40 GB Hard Disk or above.
-##  Low level Requirements:
+##  Low level Requirements
 Operating system : Windows XP (or latest).
 Front end : C Runtime
 Platform : C sting
