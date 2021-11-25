@@ -41,3 +41,26 @@ Platform : C sting
 ![BD1](https://user-images.githubusercontent.com/94293980/143193848-333e2c6e-95eb-4656-be24-6e4173819708.jpg)
 ### Data Diagram
 ![bh2](https://user-images.githubusercontent.com/94293980/143193841-c8a95575-6e09-49fd-9585-96b0292afe93.jpg)
+
+# Implementation
+
+## Manual
+
+### Setup to run Project
+
+- An integrated development environment (Suggesting Visual Studio Code).
+- GCC compiler to compile the project.
+- "make" to run the Makefile smoothly.
+
+### Steps To run Project
+
+1. First clone the repository from the Github.
+2. Open the repository in an IDE (Suggesting Visual Studio Code).
+3. The next step is to build the project with the help of make command :
+   - make all
+4. Next step is to run the project with help of make command :
+   - make run
+5. If you want to run the test cases then run the following command :
+   - make test
+6. Clean all executable files by following command :
+   - make clean
