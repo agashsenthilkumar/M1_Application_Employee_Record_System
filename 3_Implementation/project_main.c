@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <windows.h>
-
-// Structure of the employee
 struct emp {
 	char name[50];
 	float salary;
@@ -12,34 +9,18 @@ struct emp {
 };
 struct emp e;
 
-// size of the structure
 long int size = sizeof(e);
-
-// In the start coordinates
-// will be 0, 0
-COORD cord = { 0, 0 };
-
-// function to set the
-// coordinates
-void gotoxy(int x, int y)
-{
-	cord.X = x;
-	cord.Y = y;
-	SetConsoleCursorPosition(
-		GetStdHandle(STD_OUTPUT_HANDLE),
-		cord);
-}
 
 FILE *fp, *ft;
 
 // Function to add the records
 void addrecord()
 {
+char another='y';
 	system("cls");
 	fseek(fp, 0, SEEK_END);
-	char another = 'y';
-
-	while (another == 'y') {
+	while (another == 'y')
+	{
 		printf("\nEnter Name : ");
 		scanf("%s", e.name);
 
@@ -65,7 +46,6 @@ void addrecord()
 // Function to delete the records
 void deleterecord()
 {
-	system("cls");
 	char empname[50];
 	char another = 'y';
 
@@ -95,7 +75,8 @@ void deleterecord()
 		printf("\nWant to delete another"
 			" record (Y/N) :");
 		fflush(stdin);
-		another = getche();
+		scanf("%c", &another);
+		//another = getche();
 	}
 }
 
@@ -130,7 +111,7 @@ void displayrecord()
 // Function to modify the record
 void modifyrecord()
 {
-	system("cls");
+//	system("cls");
 	char empname[50];
 	char another = 'y';
 
@@ -170,9 +151,10 @@ void modifyrecord()
 }
 
 // Driver code
-int main()
+void main()
 {
 	int choice;
+	clrscr();
 
 	// opening the file
 	fp = fopen("data.txt", "rb+");
@@ -187,53 +169,43 @@ int main()
 		}
 	}
 
-	system("Color 3F");
-	printf("\n\n\n\n\t\t\t\t============="
+	//system("Color 3F");
+	printf("\n\n\n\n\n\n\t\t\t============="
 		"============================="
 		"===========");
-	printf("\n\t\t\t\t~~~~~~~~~~~~~~~~~~~"
+	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~~"
 		"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		"~~~~~");
-	printf("\n\t\t\t\t==================="
+	printf("\n\t\t\t==================="
 		"============================="
 		"=====");
-	printf("\n\t\t\t\t[|:::>:::>:::>::> "
+	printf("\n\t\t\t[|:::>:::>:::>::> "
 		"EMPLOYEE RECORD <::<:::<:::"
 		"<:::|]\t");
-	printf("\n\t\t\t\t==================="
+	printf("\n\t\t\t==================="
 		"============================="
 		"=====");
-	printf("\n\t\t\t\t~~~~~~~~~~~~~~~~~~~~"
+	printf("\n\t\t\t~~~~~~~~~~~~~~~~~~~~"
 		"~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 		"~~~");
-	printf("\n\t\t\t\t====================="
-		"==============================\n");
-	printf("\n\n\n\t\t\t\t\t\t\t\t\t\t"
+	printf("\n\t\t\t====================="
+		"===============================\n");
+	printf("\n\n\t\t\t\t"
 		"Developer : @Sushant_Gaurav"
-		"\n\n\t\t\t\t");
+		"\n\t\t\t\t");
 
-	system("pause");
+	//system("pause");
 
 	while (1) {
-		// Clearing console and asking the
-		// user for input
-		system("cls");
-		gotoxy(30, 10);
+	     //	system("cls");
 		printf("\n1. ADD RECORD\n");
-		gotoxy(30, 12);
 		printf("\n2. DELETE RECORD\n");
-		gotoxy(30, 14);
 		printf("\n3. DISPLAY RECORDS\n");
-		gotoxy(30, 16);
 		printf("\n4. MODIFY RECORD\n");
-		gotoxy(30, 18);
 		printf("\n5. EXIT\n");
-		gotoxy(30, 20);
 		printf("\nENTER YOUR CHOICE...\n");
 		fflush(stdin);
 		scanf("%d", &choice);
-
-		// Switch Case
 		switch (choice) {
 		case 1:
 
@@ -269,5 +241,5 @@ int main()
 		}
 	}
 
-	return 0;
+	//return 0;
 }
