@@ -32,7 +32,7 @@ Operating system : Windows XP (or latest).
 Front end : C Runtime
 Platform : C sting
 
-# DESGIN
+## DESGIN
 ## Structure Daigram
 ### Components Daigram
 ![st1 drawio](https://user-images.githubusercontent.com/94293980/143192282-d437be0c-e81b-440e-afe7-49de294f33a3.png)
@@ -42,31 +42,22 @@ Platform : C sting
 ### Data Diagram
 ![bh2](https://user-images.githubusercontent.com/94293980/143193841-c8a95575-6e09-49fd-9585-96b0292afe93.jpg)
 
-# Implementation
-
+## Implementation
 ## Manual
-
 ### Setup to run Project
-
 - An integrated development environment (Suggesting Visual Studio Code).
 - GCC compiler to compile the project.
 - "make" to run the Makefile smoothly.
 
 ### Steps To run Project
-
 1. First clone the repository from the Github.
 2. Open the repository in an IDE (Suggesting Visual Studio Code).
-3. The next step is to build the project with the help of make command :
-   - make all
-4. Next step is to run the project with help of make command :
-   - make run
-5. If you want to run the test cases then run the following command :
-   - make test
-6. Clean all executable files by following command :
-   - make clean
+3. The next step is to build the project with the help of make command :- make all
+4. Next step is to run the project with help of make command :- make run
+5. If you want to run the test cases then run the following command:- make test
+6. Clean all executable files by following command :- make clean
 
-# TEST PLAN
-
+## TEST PLAN
 ## Table no: High level test plan
 
 | **Test ID** | **Description**                      | **Exp I/P** | **Exp O/P** | **Actual Out** |**Type Of Test**  |    
